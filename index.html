@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WordRush - Fast Typing Game</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: linear-gradient(135deg, #181c24 60%, #ffb300 100%);
+      color: #fff;
+      margin: 0;
+      min-height: 100vh;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px 40px 20px;
+      background: rgba(24,28,36,0.95);
+      box-shadow: 0 8px 32px #0006;
+      border-radius: 0 0 32px 32px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: #ffb300;
+      margin-bottom: 0.5rem;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 12px #0007;
+    }
+    .hero h2 {
+      color: #fff;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 400;
+    }
+    .hero .download-btn {
+      background: linear-gradient(90deg, #ffb300 60%, #ffd54f 100%);
+      color: #222;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      padding: 18px 40px;
+      font-size: 1.3rem;
+      cursor: pointer;
+      margin-top: 32px;
+      box-shadow: 0 2px 12px #0003;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .hero .download-btn:hover {
+      background: linear-gradient(90deg, #ffd54f 60%, #ffb300 100%);
+      transform: scale(1.05);
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin: 48px auto 32px auto;
+      max-width: 700px;
+      background: #222b;
+      border-radius: 16px;
+      box-shadow: 0 2px 16px #0003;
+      padding: 32px;
+    }
+    .feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .feature-icon {
+      font-size: 2rem;
+      color: #ffb300;
+      margin-top: 2px;
+    }
+    .feature-text {
+      font-size: 1.1rem;
+      color: #fff;
+    }
+    .screenshots {
+      margin: 2rem auto;
+      max-width: 700px;
+      text-align: center;
+    }
+    .screenshots img {
+      max-width: 90%;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px #0003;
+      margin-bottom: 1rem;
+    }
+    .testimonials {
+      max-width: 700px;
+      margin: 2rem auto;
+      background: #222b;
+      border-radius: 16px;
+      box-shadow: 0 2px 16px #0003;
+      padding: 32px;
+      color: #fff;
+    }
+    .testimonial {
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      color: #ffd54f;
+    }
+    .credit {
+      color: #aaa;
+      font-size: 1rem;
+      margin: 2rem auto 0 auto;
+      text-align: center;
+    }
+    @media (max-width: 700px) {
+      .features-grid {
+        grid-template-columns: 1fr;
+        padding: 16px;
+      }
+      .testimonials {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>WordRush</h1>
+    <div class="credit" style="margin-top:0.5rem; margin-bottom:1rem; color:#aaa; font-size:1.1rem;">Created by Joe & Friends</div>
+    <h2>The Fast Typing Game for Everyone!</h2>
+    <p style="max-width:500px; color:#fff; font-size:1.15rem; margin-bottom:1.5rem;">Test your typing speed and accuracy with WordRush, a fun and challenging desktop game. Choose your difficulty, race against the clock, and improve your skills!</p>
+    <a href="../dist/WordRushSetup.exe" class="download-btn">Download for Windows</a>
+  </div>
+  <div class="features-grid">
+    <div class="feature"><span class="feature-icon">⚡</span><span class="feature-text">Fast-paced gameplay</span></div>
+    <div class="feature"><span class="feature-icon">🎵</span><span class="feature-text">Sound effects for correct words</span></div>
+    <div class="feature"><span class="feature-icon">🧩</span><span class="feature-text">Multiple difficulty levels</span></div>
+    <div class="feature"><span class="feature-icon">⏱️</span><span class="feature-text">Customizable timer</span></div>
+    <div class="feature"><span class="feature-icon">💻</span><span class="feature-text">Windows installer included</span></div>
+    <div class="feature"><span class="feature-icon">🎨</span><span class="feature-text">Beautiful, simple interface</span></div>
+  </div>
+  <div class="screenshots">
+    <!-- Add screenshots here if available -->
+    <!-- <img src="screenshot1.png" alt="WordRush Screenshot"> -->
+  </div>
+  <div class="testimonials">
+    <div class="testimonial">"WordRush is the most fun I've had improving my typing!"</div>
+    <div class="testimonial">"The sound effects make it so satisfying to play."</div>
+    <div class="testimonial">"Simple, fast, and addictive. Highly recommended!"</div>
+  </div>
+  <div class="credit">Created by Joe & Friends</div>
+</body>
+</html>
